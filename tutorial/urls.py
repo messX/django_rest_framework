@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tutorial.quickstart.urls import urlpatterns as urlpatterns_quickstart
+from quickstart.urls import urlpatterns as urlpatterns_quickstart
 urlpatterns = [
     path('admin/', admin.site.urls),
 ] + urlpatterns_quickstart
