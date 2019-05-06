@@ -1,4 +1,4 @@
-from quickstart.models import User, Article, Comment
+from tutorial.quickstart.models import User, Article, Comment
 from rest_framework import serializers
 from rest_framework.settings import api_settings
 

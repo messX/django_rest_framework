@@ -1,16 +1,13 @@
-from django.shortcuts import render
-
-#from captcha.models import CaptchaStore
+# from captcha.models import CaptchaStore
 from django.contrib.auth.hashers import make_password
-from quickstart.models import User, Article, Comment
-from quickstart.permissions import UserPermission, IsAuthorOrReadOnly
-from quickstart.serializers import UserSerializer, ArticleSerializer, CommentSerializer
-from rest_framework import parsers, permissions, renderers, status, viewsets
+from tutorial.quickstart.models import User, Article, Comment
+from tutorial.quickstart.permissions import UserPermission, IsAuthorOrReadOnly
+from tutorial.quickstart.serializers import UserSerializer, ArticleSerializer, CommentSerializer
+from rest_framework import permissions, status, viewsets
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
-from rest_framework.views import APIView
 
 
 # Create your views here.

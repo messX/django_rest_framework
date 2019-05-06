@@ -3,7 +3,7 @@
 from django.conf.urls import url
 from django.views.generic import TemplateView
 
-from quickstart.views import UserViewSet, ArticleViewSet, CommentViewSet
+from tutorial.quickstart.views import UserViewSet, ArticleViewSet, CommentViewSet
 
 
 user_list = UserViewSet.as_view({
